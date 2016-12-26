@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kreon-Bold.ttf">
+            <string>Kreon-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Book View Controller-->
+        <scene sceneID="l24-5X-2A9">
+            <objects>
+                <viewController storyboardIdentifier="BookViewController" id="9Sn-NM-dWs" customClass="BookViewController" customModule="BookRoomKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4PE-YN-oOA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fuv-N8-jNH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCj-vv-kBI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgI-fq-7mb">
+                                <rect key="frame" x="149" y="100" width="76" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Kreon-Bold" family="Kreon" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SgI-fq-7mb" firstAttribute="top" secondItem="4PE-YN-oOA" secondAttribute="bottom" constant="80" id="R7P-13-825"/>
+                            <constraint firstItem="SgI-fq-7mb" firstAttribute="centerX" secondItem="eCj-vv-kBI" secondAttribute="centerX" id="dL0-0j-lJj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxQ-vW-gnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="230"/>
+        </scene>
+    </scenes>
+</document>
