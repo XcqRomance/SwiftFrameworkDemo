@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZipArchive 
 
 private let shared = BookRoomManager()
 let bundle = Bundle(identifier: "xcqromance.BookRoomKit")

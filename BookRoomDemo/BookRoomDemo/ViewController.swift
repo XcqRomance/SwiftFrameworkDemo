@@ -8,6 +8,7 @@
 
 import UIKit
 import BookRoomKit
+import ZipArchive 
 
 class ViewController: UIViewController {
 

@@ -15,6 +15,7 @@
 		3551B0D41E111A1F0023F2D4 /* FontExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3551B0D21E111A1F0023F2D4 /* FontExt.m */; };
 		35974D2B1E0BB54D007DE96A /* BookRoomKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 35974D291E0BB54D007DE96A /* BookRoomKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35974D321E0BB639007DE96A /* BookRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35974D311E0BB639007DE96A /* BookRoomManager.swift */; };
+		8DF4C5141FB162B900AB7F70 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4C5131FB162B800AB7F70 /* ZipArchive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		35974D291E0BB54D007DE96A /* BookRoomKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookRoomKit.h; sourceTree = "<group>"; };
 		35974D2A1E0BB54D007DE96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35974D311E0BB639007DE96A /* BookRoomManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRoomManager.swift; sourceTree = "<group>"; };
+		8DF4C5131FB162B800AB7F70 /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = ../BookRoomDemo/BookRoomDemo/ZipArchive.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF4C5141FB162B900AB7F70 /* ZipArchive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				35974D281E0BB54D007DE96A /* BookRoomKit */,
 				35974D271E0BB54D007DE96A /* Products */,
+				8DF4C5101FB1607F00AB7F70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				3551B0CD1E1102C90023F2D4 /* BookViewController.swift */,
 			);
 			path = BookRoomKit;
+			sourceTree = "<group>";
+		};
+		8DF4C5101FB1607F00AB7F70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DF4C5131FB162B800AB7F70 /* ZipArchive.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +302,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../BookRoomDemo/BookRoomDemo",
+				);
 				INFOPLIST_FILE = BookRoomKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -313,6 +329,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../BookRoomDemo/BookRoomDemo",
+				);
 				INFOPLIST_FILE = BookRoomKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

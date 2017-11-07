@@ -14,6 +14,9 @@
 		3565059E1DD4966B0012E82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3565059C1DD4966B0012E82C /* Main.storyboard */; };
 		356505A01DD4966B0012E82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3565059F1DD4966B0012E82C /* Assets.xcassets */; };
 		356505A31DD4966B0012E82C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356505A11DD4966B0012E82C /* LaunchScreen.storyboard */; };
+		8DF4C50F1FB15D7300AB7F70 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4C50E1FB15D7300AB7F70 /* ZipArchive.framework */; };
+		8DF4C5151FB162E500AB7F70 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4C50E1FB15D7300AB7F70 /* ZipArchive.framework */; };
+		8DF4C5161FB162E500AB7F70 /* ZipArchive.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4C50E1FB15D7300AB7F70 /* ZipArchive.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3551B0CA1E10FD060023F2D4 /* BookRoomKit.framework in Embed Frameworks */,
+				8DF4C5161FB162E500AB7F70 /* ZipArchive.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +60,7 @@
 		3565059F1DD4966B0012E82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		356505A21DD4966B0012E82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356505A41DD4966B0012E82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF4C50E1FB15D7300AB7F70 /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipArchive.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF4C5151FB162E500AB7F70 /* ZipArchive.framework in Frameworks */,
 				3551B0C91E10FD060023F2D4 /* BookRoomKit.framework in Frameworks */,
+				8DF4C50F1FB15D7300AB7F70 /* ZipArchive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +105,7 @@
 		356505971DD4966B0012E82C /* BookRoomDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8DF4C50E1FB15D7300AB7F70 /* ZipArchive.framework */,
 				356505981DD4966B0012E82C /* AppDelegate.swift */,
 				3565059A1DD4966B0012E82C /* ViewController.swift */,
 				3565059C1DD4966B0012E82C /* Main.storyboard */,
